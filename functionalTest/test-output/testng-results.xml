@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[Page Loaded]]>
+    </line>
+    <line>
+      <![CDATA[Search is working fine]]>
+    </line>
+    <line>
+      <![CDATA[Weather report is obtained]]>
+    </line>
+    <line>
+      <![CDATA[Moving to More info]]>
+    </line>
+    <line>
+      <![CDATA[More info Page is loaded]]>
+    </line>
+    <line>
+      <![CDATA[Page Loaded]]>
+    </line>
+    <line>
+      <![CDATA[Entering into the About Page]]>
+    </line>
+    <line>
+      <![CDATA[Page Loaded]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="44984" started-at="2021-09-25T08:26:34Z" finished-at="2021-09-25T08:27:19Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="44984" started-at="2021-09-25T08:26:34Z" finished-at="2021-09-25T08:27:19Z">
+      <class name="WeatherReportTest.TestWeatherApp">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:WeatherReportTest.TestWeatherApp@604ed9f0]" name="setUp" is-config="true" duration-ms="3136" started-at="2021-09-25T08:26:34Z" finished-at="2021-09-25T08:26:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testWeatherApp()[pri:0, instance:WeatherReportTest.TestWeatherApp@604ed9f0]" name="testWeatherApp" duration-ms="4331" started-at="2021-09-25T08:26:37Z" finished-at="2021-09-25T08:26:41Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Page Loaded]]>
+            </line>
+            <line>
+              <![CDATA[Search is working fine]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testWeatherApp -->
+        <test-method status="PASS" signature="getResut(org.testng.ITestResult)[pri:0, instance:WeatherReportTest.TestWeatherApp@604ed9f0]" name="getResut" is-config="true" duration-ms="2" started-at="2021-09-25T08:26:41Z" finished-at="2021-09-25T08:26:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testWeatherApp status=SUCCESS method=TestWeatherApp.testWeatherApp()[pri:0, instance:WeatherReportTest.TestWeatherApp@604ed9f0] output=Page Loaded]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResut -->
+        <test-method status="PASS" signature="testWithAddress()[pri:1, instance:WeatherReportTest.TestWeatherApp@604ed9f0]" name="testWithAddress" duration-ms="11291" started-at="2021-09-25T08:26:41Z" finished-at="2021-09-25T08:26:53Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Weather report is obtained]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testWithAddress -->
+        <test-method status="PASS" signature="getResut(org.testng.ITestResult)[pri:0, instance:WeatherReportTest.TestWeatherApp@604ed9f0]" name="getResut" is-config="true" duration-ms="1" started-at="2021-09-25T08:26:53Z" finished-at="2021-09-25T08:26:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testWithAddress status=SUCCESS method=TestWeatherApp.testWithAddress()[pri:1, instance:WeatherReportTest.TestWeatherApp@604ed9f0] output=Weather report is obtained]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResut -->
+        <test-method status="PASS" signature="testMoreInfo()[pri:2, instance:WeatherReportTest.TestWeatherApp@604ed9f0]" name="testMoreInfo" duration-ms="10821" started-at="2021-09-25T08:26:53Z" finished-at="2021-09-25T08:27:03Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Moving to More info]]>
+            </line>
+            <line>
+              <![CDATA[More info Page is loaded]]>
+            </line>
+            <line>
+              <![CDATA[Page Loaded]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMoreInfo -->
+        <test-method status="PASS" signature="checkAbout()[pri:3, instance:WeatherReportTest.TestWeatherApp@604ed9f0]" name="checkAbout" duration-ms="14264" started-at="2021-09-25T08:27:03Z" finished-at="2021-09-25T08:27:18Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Entering into the About Page]]>
+            </line>
+            <line>
+              <![CDATA[Page Loaded]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkAbout -->
+        <test-method status="PASS" signature="getResut(org.testng.ITestResult)[pri:0, instance:WeatherReportTest.TestWeatherApp@604ed9f0]" name="getResut" is-config="true" duration-ms="0" started-at="2021-09-25T08:27:03Z" finished-at="2021-09-25T08:27:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMoreInfo status=SUCCESS method=TestWeatherApp.testMoreInfo()[pri:2, instance:WeatherReportTest.TestWeatherApp@604ed9f0] output=Moving to More info]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResut -->
+        <test-method status="PASS" signature="getResut(org.testng.ITestResult)[pri:0, instance:WeatherReportTest.TestWeatherApp@604ed9f0]" name="getResut" is-config="true" duration-ms="0" started-at="2021-09-25T08:27:18Z" finished-at="2021-09-25T08:27:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkAbout status=SUCCESS method=TestWeatherApp.checkAbout()[pri:3, instance:WeatherReportTest.TestWeatherApp@604ed9f0] output=Entering into the About Page]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResut -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:WeatherReportTest.TestWeatherApp@604ed9f0]" name="tearDown" is-config="true" duration-ms="1109" started-at="2021-09-25T08:27:18Z" finished-at="2021-09-25T08:27:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- WeatherReportTest.TestWeatherApp -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
