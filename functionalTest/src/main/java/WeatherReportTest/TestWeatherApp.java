@@ -23,15 +23,15 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 public class TestWeatherApp {
 	Actions action;
 	ExtentReports extent;
-	protected static ExtentTest logger;
+	ExtentTest logger;
 	
 	SoftAssert sa;
-	protected static WebDriver driver;
+	WebDriver driver;
 	
 	@BeforeClass(alwaysRun = true)
 	  public void setUp() {
 		System.out.println("Entering into the @BeforeClass");
-		System.setProperty("webdriver.chrome.driver", ReportConfig.chromeDriverPath);
+		System.setProperty("webdriver.chrome.driver", ReportConfig.chromeDriverPath); //
 		ExtentHtmlReporter htmlReporter;
 		htmlReporter = new ExtentHtmlReporter(ReportConfig.htmlReporter);
 		
@@ -43,10 +43,10 @@ public class TestWeatherApp {
 		extent.attachReporter(htmlReporter);
 		
 		
-		driver = new ChromeDriver();
+		driver = new ChromeDriver(); //
 		
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().window().maximize();//
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);//
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 	  }
@@ -95,7 +95,7 @@ public class TestWeatherApp {
 		    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Help'])[1]/following::button[1]")).click();
 		    Thread.sleep(1000);
 		    String message1 = driver.findElement(By.id("message1")).getText();
-		    if(message1.contains("Madurai")) {
+		    if(message1.contains(ReportConfig.placeToTest)) {
 		    	Reporter.log("Weather report is obtained",true);
 		    } else {
 		    	Reporter.log("Weather report is not obtained",true);
@@ -192,7 +192,7 @@ public class TestWeatherApp {
 		return result;
 	}
 	
-	@AfterMethod
+	@AfterMethod //
 	public void getResut(ITestResult result) {
 		try {
 			if (result.getStatus() == ITestResult.FAILURE) {
@@ -213,9 +213,9 @@ public class TestWeatherApp {
 	
      
 	
-	@AfterClass(alwaysRun = true)
+	@AfterClass(alwaysRun = true) //
 	  public void tearDown() throws Exception {
-		extent.createTest("TestName");
+		//extent.createTest("TestName");
 		extent.flush();
 		driver.quit();
 		
